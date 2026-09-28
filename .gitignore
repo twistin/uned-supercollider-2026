@@ -1,0 +1,18 @@
+# Archivos ignorados por Git
+
+# Archivos de sistema macOS
+.DS_Store
+**/.DS_Store
+._*
+
+# Archivos de Typora con rutas absolutas de imágenes (no distribuibles)
+# uned-sc.md contiene paths hardcodeados a /Users/sdcarr/Library/...
+Codigo_Ejemplos/uned-sc.md
+
+# PDFs (generados, no fuente)
+*.pdf
+
+# Carpetas vacías (Git no las rastrea de todas formas)
+
+# Archivos de configuración locales
+*.local
