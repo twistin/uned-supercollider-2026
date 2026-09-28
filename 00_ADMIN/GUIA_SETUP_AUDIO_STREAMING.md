@@ -22,14 +22,14 @@ Esta guía detalla los pasos necesarios para configurar el streaming de audio de
 Graba 90 segundos en una reunión de prueba: habla, ejecuta `{ SinOsc.ar(440, 0, 0.1) }.play;` (mono, como en la sesión 1), páralo, ejecuta un ejemplo con ruido (`{ PinkNoise.ar * 0.05 }.play;`) y termina. Escucha el archivo procesado con auriculares: voz y síntesis presentes, sin eco, sin cortes en el ruido y en los dos oídos.
 
 ### 🎹 SuperCollider
-*   Abre SuperCollider y ejecuta en `inicio_clase.scd` el **BLOQUE A** (rutea el audio hacia el cable virtual) y el **BLOQUE C** (limitador de seguridad + ventana de bloques para la grabación). Cambia `~sesion` en el BLOQUE C antes de cada clase.
+*   Abre SuperCollider y ejecuta en `recursos/inicio_clase.scd` el **BLOQUE A** (rutea el audio hacia el cable virtual) y el **BLOQUE C** (limitador de seguridad + ventana de bloques para la grabación). Cambia `~sesion` en el BLOQUE C antes de cada clase.
 
 ---
 
 ## 2. Al terminar la clase (Volver a la normalidad)
 
 ### 🔌 Reset de Audio
-*   **SuperCollider:** Ejecuta el **BLOQUE B** de `inicio_clase.scd` para volver a usar la Scarlett como dispositivo de salida directo.
+*   **SuperCollider:** Ejecuta el **BLOQUE B** de `recursos/inicio_clase.scd` para volver a usar la Scarlett como dispositivo de salida directo.
 *   **Microsoft Teams:** Si vas a realizar llamadas normales, recuerda volver a cambiar el **Micrófono** a *Scarlett 2i2* o *Micrófono del MacBook*. De lo contrario, los demás oirán el silencio del cable virtual.
 *   **Frecuencia (Opcional):** Puedes devolver los dispositivos a **44.1 kHz** si tus proyectos personales o sesiones de grabación lo requieren.
 

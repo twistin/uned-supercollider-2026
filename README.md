@@ -13,22 +13,24 @@ El curso se divide en dos módulos independientes de 6 horas cada uno:
 ## Estructura del repositorio
 
 ```
-SC_UNED_SUPERCOLLIDER_2026/
-├── 01_SESION_1_INTRO_SC/          Entorno, lenguaje, primer sonido
-├── 02_SESION_2_ARRAYS_ITERACION/  Arrays, funciones, aleatoriedad
-├── 03_SESION_3_FUNCIONES_MODULARIDAD/  Servidor, UGens, envolventes
-├── 04_SESION_4_SINTESIS_SCSYNTH/  SynthDef, Synth, ADSR
-├── 05_SESION_5_SECUENCIACION_PATTERNS/  Routine, TempoClock, Pbind
-├── 06_SESION_6_LIVECODING_PROYECTO/  NodeProxy, Ndef, proyecto final
-└── 90_RECURSOS_COMUNES/           Instalación, cheatsheets, referencias
-
-00_Syllabus_y_Admin/               Syllabus, fichas de presentación, plan de grabación
+00_ADMIN/     Syllabus, fichas, plan de grabación, guía de audio
+sesion_1/     Entorno, lenguaje, primer sonido          (Módulo 1)
+sesion_2/     Arrays, funciones, aleatoriedad           (Módulo 1)
+sesion_3/     Servidor, UGens, envolventes              (Módulo 1)
+sesion_4/     SynthDef, Synth, ADSR                     (Módulo 2)
+sesion_5/     Routine, TempoClock, Pbind                (Módulo 2)
+sesion_6/     NodeProxy, Ndef, proyecto final           (Módulo 2)
+recursos/     inicio_clase.scd, cheatsheets, código de ejemplo
+archivo/      Versiones anteriores, no se publican
 ```
 
-Cada sesión contiene:
-- `02_HANDOUT_ALUMNADO/` — handout para el estudiante (`.md`)
-- `03_CODIGO/` — código ejecutable de clase (`.scd`)
-- `04_TAREA/` — enunciado de tarea
+Cada carpeta `sesion_N/` contiene todo lo de esa clase:
+- `SESION_N_GUION_DOCENTE.md` — guion para la grabación (uso docente)
+- `SESION_N_HANDOUT_ESTUDIANTES.md` — handout para el alumnado
+- `sesionN_codigo_clase.scd` — código ejecutable de clase
+- `tarea_*.md` — enunciado de tarea
+
+Antes de cada clase: `recursos/inicio_clase.scd` (bloques A y C).
 
 ---
 

@@ -7,7 +7,7 @@
 
 # Archivos de Typora con rutas absolutas de imágenes (no distribuibles)
 # uned-sc.md contiene paths hardcodeados a /Users/sdcarr/Library/...
-Codigo_Ejemplos/uned-sc.md
+recursos/ejemplos/uned-sc.md
 
 # PDFs (generados, no fuente)
 *.pdf

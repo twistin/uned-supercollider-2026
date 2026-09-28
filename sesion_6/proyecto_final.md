@@ -86,7 +86,7 @@ Un sistema que funcione de forma autónoma o semi-autónoma y que puedas demostr
 
 ## Recursos útiles
 
-- [`sesion6_codigo_clase.scd`](../03_CODIGO/sesion6_codigo_clase.scd) — esqueleto de sesión de live coding listo para adaptar
+- [`sesion6_codigo_clase.scd`](sesion6_codigo_clase.scd) — esqueleto de sesión de live coding listo para adaptar
 - Handouts de todas las sesiones — para repasar cualquier concepto
 - [Documentación de Ndef](https://doc.sccode.org/Classes/NodeProxy.html)
 - [Eli Fieldsteel — Live Coding Tutorial (YouTube)](https://www.youtube.com/watch?v=2BjCB28mLlc)

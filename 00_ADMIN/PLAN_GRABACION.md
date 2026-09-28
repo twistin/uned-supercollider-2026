@@ -16,7 +16,7 @@ No dejar minutos de silencio ante un cartel «pausa». La grabación demuestra y
 
 | Sesión | Resultado comprobable | Estructura en la grabación única | Descarga/práctica |
 |--------|----------------------|----------------------------------|-------------------|
-| 1. Entorno y lenguaje | Arranca el servidor, evalúa expresiones, altera un oscilador, usa ayuda | 10 bloques de 10–13 min | Handout, sesion_1_codigo.scd, autocontrol |
+| 1. Entorno y lenguaje | Arranca el servidor, evalúa expresiones, altera un oscilador, usa ayuda | 10 bloques de 10–13 min | Handout, sesion1_codigo_clase.scd, autocontrol |
 | 2. Material musical | Genera y transforma una colección de alturas con función y azar acotado | 8–10 bloques | .scd con ejercicios escalonados y solución |
 | 3. Servidor y UGens | Construye un sonido con oscilador, ruido, filtro y envolvente | 8–10 bloques | .scd, guía de audición, mini patch |
 | 4. SynthDef y Synth | Define un instrumento reutilizable y controla sus parámetros | 8–10 bloques | .scd, mapa de flujo y retos |
@@ -80,7 +80,7 @@ Una toma fallida real y breve es útil si enseña a leer el error.
 
 En la sesión definitiva, iniciar una vez la grabación, impartir los diez bloques con transiciones orales y detenerla solo al final.
 
-**Red de seguridad en SuperCollider (`inicio_clase.scd`, BLOQUE C):**
+**Red de seguridad en SuperCollider (`recursos/inicio_clase.scd`, BLOQUE C):**
 - Limitador en la salida que se repone solo tras `Cmd+.` o `s.reboot`: ningún ejemplo puede saturar la única toma.
 - En las sesiones 1–3 los ejemplos mono se envían a los dos canales de la grabación (si no, el vídeo solo sonaría por el oído izquierdo).
 - Ventana «Grabación» con cronómetro: *Empezar* al ver que Teams graba, *Siguiente bloque* al anunciar cada bloque. Indica si vas adelantado o tarde respecto a esta escaleta y guarda en cada pulsación `INDICE_SESION_N_<fecha>.md` con los tiempos reales, listo para el handout y los capítulos.
@@ -123,7 +123,7 @@ Si se cambia el dispositivo del servidor, salir de él y arrancarlo de nuevo ant
 
 ## Preparación, grabación y publicación
 
-**Antes:** comprobar versión de macOS; abrir Teams y SuperCollider; abrir `sesion_1_codigo.scd`; cerrar mensajes, correo y ventanas con datos personales; disponer agua y guion; fijar tamaño de letra y niveles.
+**Antes:** comprobar versión de macOS; abrir Teams y SuperCollider; abrir `sesion1_codigo_clase.scd`; cerrar mensajes, correo y ventanas con datos personales; disponer agua y guion; fijar tamaño de letra y niveles.
 
 **Durante:** una sola grabación continua; anunciar cada bloque y apuntar su tiempo de entrada; ante un tropiezo menor, corregirlo con naturalidad sin reiniciar.
 
