@@ -71,12 +71,21 @@ Una toma fallida real y breve es útil si enseña a leer el error.
 
 1. Entrar en la aplicación de escritorio con la cuenta institucional, crear una reunión de prueba («Grabación SuperCollider · sesión 1»)
 2. Comprobar que **Más acciones → Grabar y transcribir → Iniciar grabación** está disponible. Si no aparece, la licencia, el rol o la política de grabación pueden necesitar ajuste por parte de la UNED
-3. Seleccionar como micrófono la Scarlett 2i2 y como altavoz la salida con la que escuchas SuperCollider
-4. Compartir la pantalla o ventana del IDE y activar **Incluir sonido**. En Mac, Teams puede pedir instalar su controlador de audio y conceder permisos de captura
+3. Elegir **una sola** ruta de audio (ver `GUIA_SETUP_AUDIO_STREAMING.md`):
+   - **A (recomendada, la del setup actual):** micrófono *Clase UNED* (Scarlett + BlackHole), SuperCollider hacia *Monitor_y_Streaming_UNED*, y **sin** «Incluir sonido» al compartir.
+   - **B:** micrófono Scarlett 2i2 y activar **Incluir sonido** al compartir. En Mac, Teams puede pedir instalar su controlador de audio y conceder permisos de captura.
+4. Compartir la pantalla o ventana del IDE. Activar el **modo de música de alta fidelidad** para que la supresión de ruido no recorte la síntesis
 5. **Prueba de 60–90 segundos:** hablar, ejecutar un seno suave, detener el seno, terminar la grabación y escuchar el archivo procesado. Voz y sintetizador deben estar en la grabación, sin eco ni audio duplicado
 6. Activar **No molestar** antes de compartir pantalla (las notificaciones también se capturan)
 
-En la sesión definitiva, iniciar una vez la grabación, impartir los diez bloques con transiciones orales y detenerla solo al final. Llevar el guion con el reloj visible y apuntar la hora aproximada de inicio de cada bloque sin interrumpir la exposición.
+En la sesión definitiva, iniciar una vez la grabación, impartir los diez bloques con transiciones orales y detenerla solo al final.
+
+**Red de seguridad en SuperCollider (`inicio_clase.scd`, BLOQUE C):**
+- Limitador en la salida que se repone solo tras `Cmd+.` o `s.reboot`: ningún ejemplo puede saturar la única toma.
+- En las sesiones 1–3 los ejemplos mono se envían a los dos canales de la grabación (si no, el vídeo solo sonaría por el oído izquierdo).
+- Ventana «Grabación» con cronómetro: *Empezar* al ver que Teams graba, *Siguiente bloque* al anunciar cada bloque. Indica si vas adelantado o tarde respecto a esta escaleta y guarda en cada pulsación `INDICE_SESION_N_<fecha>.md` con los tiempos reales, listo para el handout y los capítulos.
+
+**Si algo falla durante la toma:** leer el error en voz alta (es contenido); si no se resuelve en un minuto, pasar al ejemplo siguiente; sonido colgado → `Cmd+.`; servidor caído → `s.reboot` (el limitador vuelve solo); Teams se cae → volver a entrar, reanudar la grabación e informar a la UNED.
 
 Las grabaciones ordinarias se guardan en OneDrive del organizador (o en SharePoint si son reuniones de canal). Esperar al procesamiento, renombrar por ejemplo `M1_S01_EntornoYLenguaje`, revisar el principio/final y verificar permisos del alumnado antes de publicar el enlace. Añadir el índice de tiempos reales al handout y, si el reproductor lo permite, capítulos manuales.
 
